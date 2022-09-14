@@ -1,20 +1,32 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ['./src/pages/**/*.{js,ts,jsx,tsx}', './src/components/**/*.{js,ts,jsx,tsx}'],
   corePlugins: {
     container: false,
   },
   theme: {
-    // TODO: Uncomment this part of the code and the import of "defaultTheme" above, and complete TODOs
-    // fontFamily: {
-    //   // TODO: Add font families
-    //   //       Delete "mono" if it isn't needed
-    //   sans: ['', ...defaultTheme.fontFamily.sans],
-    //   mono: ['', ...defaultTheme.fontFamily.mono],
-    // },
+    extend: {
+      fontFamily: {
+        sans: ['Quicksand', ...defaultTheme.fontFamily.sans],
+      },
+    },
     colors: ({ colors }) => ({
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
+      primary: {
+        1: '#5A80FE',
+      },
+      white: {
+        1: '#F6F7FB',
+      },
+      gray: {
+        1: '#586380',
+      },
+      black: {
+        1: '#303535',
+      },
       // TODO: Add colors
       // Make sure that they are prepared in the Figma and follow the naming primary/secondary/gray-${number}
       // Example of correctly prepared colors in Figma — https://user-images.githubusercontent.com/20713191/143586876-5e834233-9639-4166-9811-b00e63820d98.png
