@@ -101,8 +101,3 @@ After installation enable "ESLint on save" by adding to your VS Code settings.js
 }
 ```
 
-You can navigate to settings.json by using Command Pallete (CMD+Shift+P) and then type "Open settings.json".
-
-To enable Prettier go to Preferences -> Settings -> type "Format". Then check that you have esbenp.prettier-vscode as default formatter, and also enable "Format On Save".
-
-Reload VS Code and auto-format will work for you.
