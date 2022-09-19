@@ -5,3 +5,7 @@
     -webkit-tap-highlight-color: transparent;
   }
 }
+
+html {
+  background-color: #F6F7FB;
+}

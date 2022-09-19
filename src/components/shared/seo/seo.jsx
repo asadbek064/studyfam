@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 const Seo = () => (
   <Head>
-    <title>Create Next App</title>
+    <title>StudyFam</title>
     <link rel="icon" href="/favicon.ico" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
