@@ -41,13 +41,10 @@ const Home = () => {
           onChange={handleChange} 
           style={checked ? flashcardSpotlightStyleQuestion : flashcardSpotlightStyleAnswer} />
 
-         {/*  <img className='w-full' src="/cards/Group26-question.png" alt="spotlight-card-img" style={{width: "300px"}} />
-          <img className='w-full' src="/cards/Group26-answer.png" alt="spotlight-card-img" style={{width: "300px"}} /> */}
         </div>
       </div>
     </div>
     {/* Spotling end */}
-    <div className="mx-auto my-10 max-w-5xl text-center">So it begins</div>
     
   </LayoutMain>
  )
