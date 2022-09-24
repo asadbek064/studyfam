@@ -11,7 +11,7 @@ const LoginPage = () => {
               <img
                 src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
                 className="w-full"
-                alt="Phone image"
+                alt="login svg"
               />
             </div>
             <div className="lg:ml-20 lg:w-5/12 md:w-8/12">
@@ -69,7 +69,7 @@ const LoginPage = () => {
       </section>
     </div>
     </LayoutMain>
-  );
+  )
 };
 
 export default LoginPage;

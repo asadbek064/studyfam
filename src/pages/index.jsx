@@ -1,16 +1,16 @@
-import LayoutMain from 'layouts/layouts/layout-main';
 import * as React from 'react';
+import LayoutMain from 'layouts/layouts/layout-main';
 
 
 const Home = () => {
-  let flashcardSpotlightStyleQuestion = {
+  const flashcardSpotlightStyleQuestion = {
     content: "url('/cards/Group26-question.png')", 
     width: "300px",
     appearance: "none",
     display: "block"
   }
 
-  let flashcardSpotlightStyleAnswer = {
+  const flashcardSpotlightStyleAnswer = {
     content: "url('/cards/Group26-answer.png')", 
     width: "300px",
     appearance: "none",
@@ -22,8 +22,8 @@ const Home = () => {
   const handleChange = () => {
     setCheck(!checked);
   };
-  
-  return (
+
+  return(
  <LayoutMain>
     {/* Spotlight */}
     <div className="flex justify-center">
@@ -38,7 +38,7 @@ const Home = () => {
           type="checkbox"
           className='cursor-pointer'
           checked={checked} 
-          onChange={handleChange} 
+          onChange={() => handleChange} 
           style={checked ? flashcardSpotlightStyleQuestion : flashcardSpotlightStyleAnswer} />
 
         </div>
@@ -47,7 +47,7 @@ const Home = () => {
     {/* Spotling end */}
     
   </LayoutMain>
- )
+  )
 };
 
 export default Home;
