@@ -1,15 +1,19 @@
+import { useRouter } from 'next/router'
 
 const navStyle = {
   backgroundColor: '#ffff',
 };
 
-const Navbar = () => (
+const Navbar = () => {
+  const router = useRouter()
+
+  return (
   <nav
     style={navStyle}
     className="bg-white relative mx-auto flex h-20 w-full items-center justify-between px-8"
   >
     <div className="inline-flex">
-      <a className="_o6689fn" href="/">
+      <a className="_o6689fn"  onClick={() => router.push('/#')}>
         <div className="hidden md:block">
           <svg viewBox="0 0 200 50" height="50" width="200">
             <g>
@@ -85,28 +89,28 @@ const Navbar = () => (
                           <g fill="#0023ff" data-fill-palette-color="accent">
                             <path
                               fill-rule="evenodd"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                               d="M33.736 30.867c-0.001 0.066-0.001 0.134-0.002 0.204C33.795 31.014 33.784 30.945 33.736 30.867z"
                               fill="#0023ff"
                               data-fill-palette-color="accent"
                             ></path>
                             <path
                               fill-rule="evenodd"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                               d="M33.511 30.21c-0.132 0.256 0.119 0.48 0.226 0.657C33.742 30.356 33.73 29.987 33.511 30.21z"
                               fill="#0023ff"
                               data-fill-palette-color="accent"
                             ></path>
                             <path
                               fill-rule="evenodd"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                               d="M33.991 33.09c0.39 0.072 0.647-0.324 0.239-0.48-0.499 0.078-0.505-0.807-0.496-1.539-0.04 0.038-0.102 0.072-0.224 0.099-0.071-0.489-0.48-0.639-0.72-0.96 0.205-0.435 0.618-0.662 0.72-1.2-0.187-0.613-1.193-0.407-1.2-1.2 0.283 0.035 0.544 0.427 0.72 0-1.095-0.306-0.199-1.195-1.44-1.44 0.415-2.616-0.95-4.802-2.64-7.2 0.283-0.038 0.682 0.042 0.72-0.24-1.198-1.922-1.323-4.917-3.12-6.24-0.32 0-0.64 0-0.96 0-5.935 2.353-12.285 4.183-18.96 7.2 0 0.64 0 1.28 0 1.92 3.846 8.514 6.949 18.052 10.56 26.64 6.493-2.307 13.298-4.303 19.2-7.2C35.438 37.777 35.215 36.099 33.991 33.09zM18.151 45.81c-1.307-3.851-1.244-6.987-3.12-9.6 0.236-0.735 0.641 0.275 0.96 0.24-0.823-0.536-0.171-1.062-0.48-1.681-0.109-0.22-0.667-0.122-0.72-0.239-0.056-0.123 0.769-1.662-0.72-1.44 0.743-1.596-0.677-4.59-2.16-6 0.046-0.272 0.241-0.133 0.24 0 0.549-1.611-1.498-3.535-1.44-5.28 4.845-1.888 9.134-3.664 14.16-5.04 3.115 7.712 6.11 14.856 8.88 23.28C29.021 42.439 23.468 44.007 18.151 45.81z"
                               fill="#0023ff"
                               data-fill-palette-color="accent"
                             ></path>
                             <path
                               fill-rule="evenodd"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                               d="M45.271 17.49c-0.269 0.651-2.637-1.478-3.84-0.72-0.279-1.97-2.085-1.286-3.12-2.16-0.635 0.565-1.448 0.952-2.16 1.44-0.036 0.597 0.378 0.743 0.48 1.2-0.558 0.268-0.643-0.052-1.2 0.48-0.517 3.703-2.715 5.754-2.16 9.36 0.676 0.639 1.372 0.008 1.92 0.48-0.412-0.013-0.615 0.185-0.72 0.48 3.979-0.66 2.738-6.542 5.04-8.88 4.116 1.529 9.854 3.35 14.16 4.8-2.746 7.56-5.361 15.93-8.4 23.76-3.786-0.683-7.615-3.648-11.279-2.88 0.481 2.449 3.725 2.832 5.76 3.601 2.37 0.895 4.996 1.717 7.439 2.16 3.344-8.897 6.186-18.295 9.601-27.121 0-0.32 0-0.64 0-0.96C53.429 20.6 47.593 18.896 45.271 17.49z"
                               fill="#0023ff"
                               data-fill-palette-color="accent"
@@ -196,28 +200,28 @@ const Navbar = () => (
                           <g fill="#0023ff" data-fill-palette-color="accent">
                             <path
                               fill-rule="evenodd"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                               d="M33.736 30.867c-0.001 0.066-0.001 0.134-0.002 0.204C33.795 31.014 33.784 30.945 33.736 30.867z"
                               fill="#0023ff"
                               data-fill-palette-color="accent"
                             ></path>
                             <path
                               fill-rule="evenodd"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                               d="M33.511 30.21c-0.132 0.256 0.119 0.48 0.226 0.657C33.742 30.356 33.73 29.987 33.511 30.21z"
                               fill="#0023ff"
                               data-fill-palette-color="accent"
                             ></path>
                             <path
                               fill-rule="evenodd"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                               d="M33.991 33.09c0.39 0.072 0.647-0.324 0.239-0.48-0.499 0.078-0.505-0.807-0.496-1.539-0.04 0.038-0.102 0.072-0.224 0.099-0.071-0.489-0.48-0.639-0.72-0.96 0.205-0.435 0.618-0.662 0.72-1.2-0.187-0.613-1.193-0.407-1.2-1.2 0.283 0.035 0.544 0.427 0.72 0-1.095-0.306-0.199-1.195-1.44-1.44 0.415-2.616-0.95-4.802-2.64-7.2 0.283-0.038 0.682 0.042 0.72-0.24-1.198-1.922-1.323-4.917-3.12-6.24-0.32 0-0.64 0-0.96 0-5.935 2.353-12.285 4.183-18.96 7.2 0 0.64 0 1.28 0 1.92 3.846 8.514 6.949 18.052 10.56 26.64 6.493-2.307 13.298-4.303 19.2-7.2C35.438 37.777 35.215 36.099 33.991 33.09zM18.151 45.81c-1.307-3.851-1.244-6.987-3.12-9.6 0.236-0.735 0.641 0.275 0.96 0.24-0.823-0.536-0.171-1.062-0.48-1.681-0.109-0.22-0.667-0.122-0.72-0.239-0.056-0.123 0.769-1.662-0.72-1.44 0.743-1.596-0.677-4.59-2.16-6 0.046-0.272 0.241-0.133 0.24 0 0.549-1.611-1.498-3.535-1.44-5.28 4.845-1.888 9.134-3.664 14.16-5.04 3.115 7.712 6.11 14.856 8.88 23.28C29.021 42.439 23.468 44.007 18.151 45.81z"
                               fill="#0023ff"
                               data-fill-palette-color="accent"
                             ></path>
                             <path
                               fill-rule="evenodd"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                               d="M45.271 17.49c-0.269 0.651-2.637-1.478-3.84-0.72-0.279-1.97-2.085-1.286-3.12-2.16-0.635 0.565-1.448 0.952-2.16 1.44-0.036 0.597 0.378 0.743 0.48 1.2-0.558 0.268-0.643-0.052-1.2 0.48-0.517 3.703-2.715 5.754-2.16 9.36 0.676 0.639 1.372 0.008 1.92 0.48-0.412-0.013-0.615 0.185-0.72 0.48 3.979-0.66 2.738-6.542 5.04-8.88 4.116 1.529 9.854 3.35 14.16 4.8-2.746 7.56-5.361 15.93-8.4 23.76-3.786-0.683-7.615-3.648-11.279-2.88 0.481 2.449 3.725 2.832 5.76 3.601 2.37 0.895 4.996 1.717 7.439 2.16 3.344-8.897 6.186-18.295 9.601-27.121 0-0.32 0-0.64 0-0.96C53.429 20.6 47.593 18.896 45.271 17.49z"
                               fill="#0023ff"
                               data-fill-palette-color="accent"
@@ -236,15 +240,19 @@ const Navbar = () => (
 
       <div className="relative flex items-center justify-start">
         <div className="relative mx-4 block">
-          <button>
-            <a href="/" className="text-x[#586380] font-semibold">
+          <button 
+            onClick={() => router.push('/#')}
+          >
+            <a className="text-x[#586380] font-semibold">
               Home
             </a>
           </button>
         </div>
         <div className="relative mx-4 block">
-          <button>
-            <a href="/convertor" className="text-x[#586380] font-semibold">
+          <button
+           onClick={() => router.push('/convertor')}
+           >
+            <a className="text-x[#586380] font-semibold">
               Quizlet-to-Studyfam
             </a>
           </button>
@@ -271,7 +279,9 @@ const Navbar = () => (
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                 </svg>
-                <a className="hover:bg-gray-200 inline-block rounded-full py-2 px-3" href="#">
+                <a className="hover:bg-gray-200 inline-block rounded-full py-2 px-3"
+                onClick={ () => router.push('/')}
+                >
                   Create
                 </a>
               </div>
@@ -284,6 +294,7 @@ const Navbar = () => (
             <button
               type="button"
               className="relative inline-flex items-center rounded-full border px-2 hover:shadow-lg"
+              onClick={() => router.push('/login')}
             >
               <div className="p-2">Join</div>
             </button>
@@ -292,6 +303,6 @@ const Navbar = () => (
       </div>
     </div>
   </nav>
-);
+)};
 
 export default Navbar;
