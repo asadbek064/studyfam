@@ -17,6 +17,8 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
     // Removes "default" from "restrictedNamedExports", original rule setup — https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb-base/rules/es6.js#L65
     'no-restricted-exports': ['error', { restrictedNamedExports: ['then'] }],
     'no-unused-vars': 'error',
